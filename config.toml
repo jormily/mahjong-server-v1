@@ -1,0 +1,41 @@
+[core]
+# enable debug mode
+accout_pri_key = "^&*#$%()@"
+room_pri_key = "~!@#$(*&^%$&"
+version = 20161227
+
+[user]
+gems = 100
+coins = 1000
+
+#mysql配置
+[mysql]
+host = '127.0.0.1'
+user = 'root'
+psw = 'pwd#2019'
+db = 'db_babykylin'
+port = 3306
+args = "charset=utf8mb4"
+buf_size = 10
+max_idle_conns = 20
+max_open_conns = 15
+show_sql = true
+
+#acount server
+[act_svr]
+host = "127.0.0.1:9000"
+host_api = "localhost:12581"
+app_web = "http://fir.im/2f17"
+
+[hall_svr]
+host = "127.0.0.1:9001"
+host_room = "127.0.0.1:9002"
+
+
+[game_svr]
+id = 1001
+http_port = 9003                #暴露给大厅服的HTTP端口号
+http_tick_time = 5000           #HTTP TICK的间隔时间，用于向大厅服汇报情况
+host = "127.0.0.1:1000"         #暴露给客户端的接口
+ip = "127.0.0.1"
+port = 1000
